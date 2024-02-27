@@ -19,7 +19,7 @@ RCT_EXPORT_MODULE()
 
 // RCT_EXPORT_VIEW_PROPERTY(onCancel, RCTBubblingEventBlock)
 // RCT_EXPORT_VIEW_PROPERTY(onDone, RCTBubblingEventBlock)
-// RCT_EXPORT_VIEW_PROPERTY(onNeutral, RCTBubblingEventBlock)
+RCT_EXPORT_VIEW_PROPERTY(onNeutral, RCTBubblingEventBlock)
 RCT_EXPORT_VIEW_PROPERTY(onChange, RCTBubblingEventBlock)
 
 RCT_EXPORT_VIEW_PROPERTY(value, NSDate)
