@@ -57,7 +57,11 @@ const MonthPicker = ({
 
   const onChange = useCallback(
     ({ nativeEvent: { newDate } }) =>
-      setSelectedDate(moment(newDate, NATIVE_FORMAT).toDate()),
+     { 
+      const date = moment(newDate, NATIVE_FORMAT).toDate()
+      setSelectedDate(date)
+      onAction(ACTION_DATE_SET, date)
+    },
     [],
   );
 
