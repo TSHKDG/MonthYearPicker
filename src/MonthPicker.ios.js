@@ -26,7 +26,6 @@ const styles = StyleSheet.create({
     height: 244,
     width,
   },
-  picker: { flex: 1 },
 });
 
 const MonthPicker = ({
@@ -40,6 +39,7 @@ const MonthPicker = ({
   cancelButton,
   neutralButton,
   autoTheme = true,
+  style
 }) => {
   invariant(value, 'value prop is required!');
 
@@ -124,7 +124,7 @@ const MonthPicker = ({
             neutralButton,
             autoTheme,
           }}
-          style={styles.picker}
+          style={style}
           value={value.getTime()}
           minimumDate={minimumDate?.getTime() ?? null}
           maximumDate={maximumDate?.getTime() ?? null}
